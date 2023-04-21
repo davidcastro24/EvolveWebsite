@@ -1,3 +1,13 @@
+$( document ).ready(function() {
+    var w = window.innerWidth;
+    if(w > 767){
+        $('#menu-jk').scrollToFixed();
+    }/*else{
+        $('#menu-jk').scrollToFixed();
+    }*/
+    
+})
+
 $(window).scroll(function(){
     const bannerTop = $("#staff").offset().top;
     const bannerBottom = bannerTop + $("#staff").height();
@@ -44,15 +54,6 @@ $(window).scroll(function(){
 });
 
 
-$( document ).ready(function() {
-    var w = window.innerWidth;
-    if(w > 767){
-        $('#menu-jk').scrollToFixed();
-    }else{
-        $('#menu-jk').scrollToFixed();
-    }
-    
-})
 
 
 /*$(document).ready(function(){
