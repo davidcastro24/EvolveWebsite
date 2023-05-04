@@ -515,8 +515,7 @@ nav .small-menu {
 
   .about-us-container {
     color: #6d6c70;
-    padding: 50px; 
-    background-image: url("/assets/images/evolve/evolvebg.png");
+    padding: 50px;
    
   }
     @media screen and (max-width: 940px) {
