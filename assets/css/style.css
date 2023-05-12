@@ -18,20 +18,21 @@ Description: This Template is created for web template
   --color-img-holder: #efefef; }
 
 @font-face {
-  font-family: 'Glacial Indifference';
-  src: url("../fonts/GlacialIndifference-Regular.html") format("woff2"), url("../fonts/basiersquare-regular-webfont.woff") format("woff");
+  font-family: 'Dosis';
+  src: url("../fonts/Dosis-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-display: swap;
   font-style: normal; }
 @font-face {
-  font-family: 'Glacial Indifference bold';
-  src: url("../fonts/GlacialIndifference-Bold.html") format("woff2"), url("../fonts/GlacialIndifference-Bold.woff") format("woff");
+  font-family: 'Dosis';
+  src: url("../fonts/Dosis-VariableFont_wght.ttf") format("truetype");
   font-weight: bold;
   font-display: swap;
   font-style: normal; }
 @font-face {
-  font-family: 'title-font';
-  src: url("../fonts/cerebri-sans.woff") format("truetype"); }
+  font-family: 'Dosis';
+  src: url("../fonts/Dosis-VariableFont_wght.ttf") format("truetype");
+  font-weight: bold; }
 /* ===================================== Basic CSS ================================== */
 * {
   margin: 0px;
@@ -103,14 +104,16 @@ p {
   padding: 0px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: font-bold; }
+  font-family: "Dosis",sans-serif;
+  font-weight: bold;
+}
 
 strong {
-  font-family: "Glacial Indifference bold", "Open Sans", sans-serif; }
+  font-family: "Dosis", sans-serif; }
 
 body {
   background-color: #ffffff !important;
-  font-family: "Glacial Indifference", "Open Sans", sans-serif;
+  font-family: "Dosis", sans-serif;
   color: #6A6A6A;
   width: 100%;
   overflow-x: hidden; }
@@ -118,10 +121,12 @@ body {
 .session-title {
   padding: 30px;
   margin: 0px; }
-  .session-title h2 {
+  .session-title h2,  .session-title h1 {
     width: 100%;
     text-align: center;
-    font-family: "title-font", "Open Sans", sans-serif; }
+    font-family: "Dosis", sans-serif;
+    font-weight: bold; 
+}
   .session-title p {
     max-width: 850px;
     text-align: center;
@@ -135,7 +140,7 @@ body {
   padding: 20px;
   padding-left: 0px;
   margin-bottom: 30px; }
-  .inner-title h2 {
+  .inner-title h2, .inner-title h1 {
     width: 100%;
     text-align: center;
     font-size: 2rem; }
@@ -154,14 +159,14 @@ body {
   @media screen and (max-width: 911px) {
     .page-nav {
       padding-top: 156px; } }
-  .page-nav h2 {
+  .page-nav h2, .page-nav h1 {
     font-size: 30px;
     width: 100%;
     color: #444;
-    font-family: "Glacial Indifference", "Open Sans", sans-serif;
+    font-family: "Dosis", sans-serif;
     font-weight: 600; }
     @media screen and (max-width: 600px) {
-      .page-nav h2 {
+      .page-nav h2, .page-nav h1 {
         font-size: 22px; } }
   .page-nav ul li {
     float: left;
@@ -272,7 +277,7 @@ body {
   padding: 5px 25px;
   color: rgba(0, 171, 159, 0.9);
   border-color: rgba(0, 171, 159, 0.9);
-  font-family: "Glacial Indifference bold", "Open Sans", sans-serif; }
+  font-family: "Dosis", sans-serif; }
 
 /* ===================================== Header CSS ================================== */
 .header-container {
@@ -319,7 +324,7 @@ nav .nav-div ul {
     font-size: .9rem; }
     nav .nav-div ul li a {
       color: #fff;
-      font-family: "Glacial Indifference bold", "Open Sans", sans-serif; }
+      font-family: "Dosis", sans-serif; }
       @media screen and (max-width: 767px) {
         nav .nav-div ul li a {
           color: #444; } }
@@ -409,12 +414,14 @@ nav .small-menu {
     .banner-container .slider-det span {
       text-transform: uppercase;
       font-size: 1.1rem; }
-    .banner-container .slider-det h2 {
+    .banner-container .slider-det h2, .banner-container .slider-det h1 {
       margin-top: 30px;
       margin-bottom: 20px;
-      font-size: 2.5rem; }
+      font-size: 2.5rem; 
+      font-family: "Dosis",sans-serif;
+    }
       @media screen and (max-width: 409px) {
-        .banner-container .slider-det h2 {
+        .banner-container .slider-det h2, .banner-container .slider-det h1 {
           font-size: 1.5rem; } }
     .banner-container .slider-det p {
       font-size: 1rem; }
@@ -431,18 +438,21 @@ nav .small-menu {
     right: -121px; }
 
 .page-title {
-  /*background-image: url(../images/head_bg.jpg);*/
+  background-image: url(../images/evolve/egs.png);
   background-size: 100%;
   height: 400px;
   padding-top: 155px;
-  color: #FFF; }
+  color: #FFF; 
+  bottom: 20px;
+  }
   @media screen and (max-width: 699px) {
     .page-title {
       background-size: auto; } }
   @media screen and (max-width: 600px) {
     .page-title {
       padding-top: 200px; } }
-  .page-title h2 {
+  .page-title h2, .page-title h1 {
+    font-family: "Dosis",sans-serif;
     text-align: center;
     width: 100%; }
   .page-title p {
@@ -465,14 +475,30 @@ nav .small-menu {
       }
 
       #myVideo2 {
-        position: absolute;
+        position:absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 50%;
+        height: 60%;
         object-fit: cover;
         z-index: -1;
+        padding-bottom: 10px;
+        overflow: hidden;
+        display: flex;
+        flex: 1;
+        bottom: 20px;
       }
+
+      /*@media screen and (min-width: 992px) {
+        #myVideo2 {
+          height: 50%; 
+      }
+
+        @media screen and (max-width: 576px) {
+          #myVideo2 {
+            height: 60%; 
+          }
+        }*/
       
       #myVideoHome {
         position: absolute;
@@ -512,25 +538,52 @@ nav .small-menu {
     padding-top: 10vh;
   }
 
+  #aboutHome h1{
+   padding-bottom: 20px;
+   font-family: "Dosis",sans-serif;
+  }
+
 
   .about-us-container {
     color: #6d6c70;
     padding: 50px;
-   
+    /*max-height: calc(80% - 20px);  set a maximum height for the about-us-container based on the video height */
+    overflow-y: auto;
+    flex:1;
+    display: flex;
+  }
+
+  .about-us-container p {
+    /*text-indent: 5px;*/
+    text-align: justify;
+  }
+
+  .about-us-container h2,h1{
+    font-family: "Dosis",sans-serif;
   }
     @media screen and (max-width: 940px) {
       .about-us-container {
-        padding: 30px 10px; } }
+        padding: 30px 10px;
+        max-height: calc(70% - 20px); /* set a maximum height for the about-us-container based on the video height */
+        overflow-y: auto;
+      } }
     .about-us-container p {
       /*text-indent: 5px;*/
       font-size: 1.5rem; 
       padding: 0 0 20px 0;
-  
+      
     }
 
   .banner-about{
-    width: 100%;
-    padding: 0 0 20px 0;
+    max-width:70%;
+    max-height: 70%;
+    padding: 60px 0 0 60px;
+  }
+
+  .about-image{
+    max-width:100%;
+    max-height: 900%;
+    padding: 40px 20px 40px 0;
   }
 
   .about-us-head{
@@ -540,19 +593,30 @@ nav .small-menu {
   }
 
 /* ===================================== Count CSS ================================== */
+#staff{
+  background-color: #E5E4E2;
+}
+
+#learnmore:hover{
+  transform: scale(1.1);
+}
 .doctor-message {
   /*background-image: url("../images/slider/slider_2.jpg");*/
   background-attachment: fixed;
   background-size: cover; 
-  background-color: #114b77;
+  background-color: #000000;
 }
+
   .doctor-message .inner-lay {
-    background-color: #114b77;
+    background-color: #000000;
     padding: 50px;
     color: #FFF; }
     @media screen and (max-width: 940px) {
       .doctor-message .inner-lay {
-        padding: 30px 10px; } }
+        padding: 30px 10px; 
+        background-color: #000000;
+      
+      } }
     .doctor-message .inner-lay .numb {
       text-align: center;
       padding: 30px; }
@@ -561,8 +625,32 @@ nav .small-menu {
         padding-bottom: 10px;
         border-bottom: 1px solid #CCC;
         margin-bottom: 20px; }
+        
+/* ===================================== Flex Left ================================== */
+.flex-left{
+  display: flex;
+}
+
+.flex-text{
+  flex:1;
+}
+
+.flex-text p{ 
+  text-align: justify;
+}
+
+
+.flex-left img{
+  float: right;
+  margin-right: 20px;
+  height: 100%;
+  width: 60%;
+}
 
 /* ===================================== Services CSS ================================== */
+.service-container h1{
+  font-family: "Dosis",sans-serif;
+}
 .service-container {
   padding: 50px;
   padding-bottom: 100px !important; }
@@ -570,7 +658,7 @@ nav .small-menu {
     .service-container {
       padding: 30px 10px; } }
   .service-container .service-row .service-col {
-    background-color: #f2f2f2;
+    background-color: transparent;
     padding: 15px;
     text-align: center;
     transition: all 0.2s ease-in-out;
@@ -582,7 +670,7 @@ nav .small-menu {
       width: 80px;
       height: 80px;
       text-align: center;
-      background-color: #114b77;
+      background-color: #000000;
       color: #FFF;
       font-size: 2.2rem;
       padding-top: 18px;
@@ -591,9 +679,9 @@ nav .small-menu {
     .service-container .service-row .service-col h6 {
       font-size: 1.1rem;
       font-weight: 600;
-      font-family: "Glacial Indifference", "Open Sans", sans-serif; }
+      font-family: "Dosis", sans-serif; }
     .service-container .service-row .service-col p {
-      font-size: .85rem;
+      font-size: 0.85rem;
       margin-top: 10px; }
     #service_home{
       text-align: justify;
@@ -601,11 +689,12 @@ nav .small-menu {
 
 /* ===================================== Quote CSS ================================== */
 .doctor-message {
-  background-image: url("../images/slider/slider-3.jpg");
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover; 
+  background-color: #000000;
+}
   .doctor-message .inner-lay {
-    background-color: rgba(0, 171, 159, 0.9);
+    background-color: #000000;
     padding: 50px;
     padding-bottom: 0px;
     color: #FFF; }
@@ -698,8 +787,14 @@ nav .small-menu {
 .footer {
   padding: 50px;
   padding-bottom: 0px;
-  background-color: #444;
-  color: #FFF; }
+  background-color: #000000;
+  color: #FFF; 
+  
+}
+
+.footer h2{
+  font-family: "Dosis",sans-serif;
+}
   @media screen and (max-width: 940px) {
     .footer {
       padding: 30px 10px; } }
@@ -725,7 +820,7 @@ nav .small-menu {
 
 .copy {
   padding: 20px;
-  background-color: #2E2E2E;
+  background-color: #000000e7;
   color: #FFF; }
   .copy a {
     color: #FFF; }

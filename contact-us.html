@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no"
+    />
+    <title>Evolve Global Solutions</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/evolve/logo_transparent.png"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/13ae3f0571.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        console.log("init");
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("zsyzz-HAJEGYeRhB2");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!--####################### Header Starts Here ###################-->
+    <div class="header-container">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 left-item">
+              <ul>
+                <li>
+                  <i class="fas fa-envelope-square"></i> contact@evolveglobalsolutions.com
+                </li>
+                <!--<li class="d-none d-sm-block">
+                  <i class="fa fa-whatsapp"></i> +123 987 887 765
+                </li>-->
+              </ul>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block right-item">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/evolve-global-solutions/"
+                    style="color: rgb(255, 255, 255)">
+                    <i class="fa-brands fa-linkedin"> </i> Evolve Global Solutions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="menu-jk2" class="container-fluid no-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-12 logo">
+              <img
+                class="log"
+                src="assets/images/evolve/evolve-horizontal.png"
+                alt="evolve global solutions logo"
+              />
+              <img
+                class="log-gray"
+                src="assets/images/evolve/evolve-horizontal-inverted.png"
+                alt="evolve global solutions logo"
+              />
+              <a data-toggle="collapse" data-target="#nav-head" href="#nav-head"
+                ><i class="fas d-block d-md-none small-menu fa-bars"></i
+              ></a>
+            </div>
+            <div id="nav-head" class="col-md-9 nav-div d-none d-md-block">
+              <ul>
+                <li><a class="js-scroll-trigger" href="index.html">Home</a></li>
+                <li>
+                  <a class="js-scroll-trigger" href="about-us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="js-scroll-trigger" href="service.html">Services</a>
+                </li>
+                <li>
+                  <a class="js-scroll-trigger" href="contact-us.html"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--###################### Page Title Starts Here ############################-->
+
+    
+    <div class="page-title titl-2">
+      <div class="container">
+        <div class="row">
+          
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--###################### Contact US Starts Here ############################-->
+    <div class="row contact-rooo no-margin" style="margin-top: 55px">
+      <div class="container">
+        <div class="row">
+          <div style="padding: 20px" class="col-sm-7">
+            <h2>Contact Us!</h2>
+            <h5>
+              Have a question? Submit a message and your contact info and we'll
+              get back to you right away!
+            </h5>
+            <br />
+            <form action="/submit-form" method="post" id="contact-form">
+              <div class="row cont-row">
+                <div class="col-sm-3"><label>Name</label><span>:</span></div>
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    name="name"
+                    class="form-control input-sm"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row cont-row">
+                <div class="col-sm-3">
+                  <label>Email Address</label><span>:</span>
+                </div>
+                <div class="col-sm-8">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter Email Address"
+                    class="form-control input-sm"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row cont-row">
+                <div class="col-sm-3">
+                  <label>Mobile Number</label><span>:</span>
+                </div>
+                <div class="col-sm-8">
+                  <input
+                    type="tel"
+                    name="mobile"
+                    placeholder="Enter Mobile Number"
+                    pattern="^[\d()+-]+$"
+                    class="form-control input-sm"
+                    
+                  />
+                </div>
+              </div>
+              <div class="row cont-row">
+                <div class="col-sm-3"><label>Message</label><span>:</span></div>
+                <div class="col-sm-8">
+                  <textarea
+                    rows="5"
+                    placeholder="Enter Your Message"
+                    name="message"
+                    class="form-control input-sm"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div style="margin-top: 10px" class="row">
+                <div style="padding-top: 10px" class="col-sm-3">
+                  <label></label>
+                </div>
+                <div class="col-sm-8">
+                  <button type="submit" class="btn btn-success btn-sm">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-5">
+            <div style="margin: 50px" class="serv">
+              <h2 style="margin-top: 10px">HQ Address</h2>
+              Tegucigalpa <br />
+              Francisco Morazán <br />
+              Honduras <br />
+              <!--Phone: +2222222222222--> <br />
+              Email:
+              <a href="mailto:contact@evolveglobalsolutions.com" class=""
+                >contact@evolveglobalsolutions.com</a
+              ><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--####################### footer Starts Here ###################-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h2>Let's Evolve Together!</h2>
+              <p>
+                Need excellence and agility in your business? <br>
+                Need a high paying job that values your skills?<br>
+                What are you waiting for!?<br>
+                Contact us and be part of the evolution.
+              </p>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h2>Pages</h2>
+            <ul class="list-unstyled link-list">
+              <li>
+                <a ui-sref="about" href="#/about">About us</a
+                ><i class="fa fa-angle-right"></i>
+              </li>
+              <li><a ui-sref="services" href="#/service">Services</a><i class="fa fa-angle-right"></i></li>
+              <li>
+                <a ui-sref="contact" href="#/contact">Contact us</a
+                ><i class="fa fa-angle-right"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 map-img">
+            <h2>Contact Us</h2>
+            <address class="md-margin-bottom-40">
+              Tegucigalpa <br />
+              Francisco Morazán <br />
+              Honduras <br />
+              <!--Phone: +2222222222222--> <br />
+              Email:
+              <a href="mailto:contact@evolveglobalsolutions.com" class=""
+                >contact@evolveglobalsolutions.com</a
+              ><br />
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <div class="container">
+        Copyright &copy; 2023 Evolve Global Solutions - All Rights Reserved.
+        <span>
+          <a href="https://www.freepik.com/"
+            >All images and videos designed by Freepik</a
+          >
+        </span>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //<![CDATA[
+      var tlJsHost =
+        window.location.protocol == "https:"
+          ? "https://secure.trust-provider.com/"
+          : "http://www.trustlogo.com/";
+      document.write(
+        unescape(
+          "%3Cscript src='" +
+            tlJsHost +
+            "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"
+        )
+      );
+      //]]>
+    </script>
+    <script language="JavaScript" type="text/javascript">
+      TrustLogo(
+        "https://www.positivessl.com/images/seals/positivessl_trust_seal_sm_124x32.png",
+        "POSDV",
+        "none"
+      );
+    </script>
+  </body>
+  
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+  <script type="text/javascript" src="./assets/js/email_form.js"></script>
+  <script type="text/javascript" src="./assets/js/about-us.js"></script>
+</html>
